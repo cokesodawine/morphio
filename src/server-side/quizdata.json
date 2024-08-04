@@ -1,0 +1,259 @@
+[
+  {
+    "level": "easy",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "hard",
+    "question": "Which class/set of classes can illustrate <br>polymorphism in the following code? ?",
+    "code1": "<br><br><br>abstract class Student {<br>   public int marks;<br>   <br>   abstract int calcGrade();<br>}<br><br>class Topper extends Student {<br>   public int calcGrade() {<br>      return 10;<br>   }<br>}<br><br>class Average extends Student {<br>   public int calcGrade() {<br>      return 20;<br>   }<br>}",
+    "code2": "<br><br><br>class Failed {<br>   private int marks;<br><br>   // Getter for marks<br>   public int getMarks() {<br>      return marks;<br>   }<br><br>   // Setter for marks<br>   public void setMarks(int marks) {<br>      this.marks = marks;<br>   }<br>}",
+    "ansChoice": [
+      { "ansStr": "a) Only class student can show polymorphism", "isCorrect": false },
+      { "ansStr": "b) Only class student and topper together can show <br>   polymorphism", "isCorrect": false },
+      { "ansStr": "c) All class student, topper and average together <br>   can show polymorphism", "isCorrect": true },
+      { "ansStr": "d) Class failed should also inherit class student <br>   for this code to work for polymorphism", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "What does the word 'Polymorphism' mean in Greek ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "hard",
+    "question": "What is output of the following program ?",
+    "code1": "<br><br><br><br>class Student {<br>    public int marks;<br><br>    void disp() {<br>        System.out.println<br>                ('It's base class');<br>    }<br><br>    class Topper extends Student {<br>        @Override<br>        void disp() {<br>            System.out.println<br>                ('It's derived class');<br>        }<br>    }<br><br><br>... continue --&gt; ...",
+    "code2": "<br><br><br><br>... continue --&gt; ...<br><br><br>    public static void main(String[] args) {<br>        Student s = new Student();<br>        Topper t = new Student().new Topper();<br><br>        // Call disp method on both instances<br>        s.disp();<br>        t.disp();<br>    }<br>}",
+    "ansChoice": [
+      { "ansStr": "a) Its base classIts derived class", "isCorrect": true },
+      { "ansStr": "b) Its base class Its derived class", "isCorrect": false },
+      { "ansStr": "c) Its derived classIts base class", "isCorrect": false },
+      { "ansStr": "d) Its derived class Its base class", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "easy",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "hard",
+    "question": "Find the output of the following program.",
+    "code1": "<br><br><br><br>class Education {<br>  String name;<br>  <br>  public Education() {<br>      name = '';<br>  }<br>  <br>  public void disp() {<br>      System.out.println<br>          ('Its education system');<br>  }<br><br><br>... coninuation --&gt; ...",
+    "code2": "<br><br><br><br>... coninuation --&gt; ...<br><br><br>  public class School extends Education {<br>      public void dsip() {<br>          System.out.println<br>                ('Its school education system');<br>      }<br>  }<br>  <br>  // Main method<br>  public static void main(String[] args) {<br>      Education.School s = new Education()<br>                                .new School();<br>      s.disp();<br>  }<br>}",
+    "ansChoice": [
+      { "ansStr": "a) Its school education system", "isCorrect": true },
+      { "ansStr": "b) Its education system", "isCorrect": false },
+      { "ansStr": "c) Its school education systemIts education system", "isCorrect": false },
+      { "ansStr": "d) Its education systemIts school education system", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "Which principle allows different classes to be <br>treated as instances of the same class through <br>inheritance ?",
+    "ansChoice": [
+      { "ansStr": "a) Encapsulation", "isCorrect": false },
+      { "ansStr": "b) Abstraction", "isCorrect": false },
+      { "ansStr": "c) Inheritance", "isCorrect": false },
+      { "ansStr": "d) Polymorphism", "isCorrect": true }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "easy",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "In Java, what concept allows us to implement <br>runtime polymorphism ?",
+    "ansChoice": [
+      { "ansStr": "a) Method overloading", "isCorrect": false },
+      { "ansStr": "b) Method overriding", "isCorrect": true },
+      { "ansStr": "c) Constructors", "isCorrect": false },
+      { "ansStr": "d) Static methods", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "Which of these allows compile-time polymorphism ?",
+    "ansChoice": [
+      { "ansStr": "a) Method overloading", "isCorrect": true },
+      { "ansStr": "b) Method overriding", "isCorrect": false },
+      { "ansStr": "c) Both", "isCorrect": false },
+      { "ansStr": "d) None of the above", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "easy",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "Which statement is true regarding polymorphism ?",
+    "ansChoice": [
+      {
+        "ansStr": "a) An overridden method can be less restrictive than <br>   the superclass method",
+        "isCorrect": false
+      },
+      {
+        "ansStr": "b) An overridden method can be more restrictive than <br>   the superclass method",
+        "isCorrect": true
+      },
+      {
+        "ansStr": "c) Overloaded methods cannot change the return type",
+        "isCorrect": false
+      },
+      { "ansStr": "d) Constructors can be overridden", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "Can we override static methods in Java ?",
+    "ansChoice": [
+      { "ansStr": "a) Yes", "isCorrect": false },
+      { "ansStr": "b) No", "isCorrect": true },
+      { "ansStr": "c) Sometimes", "isCorrect": false },
+      { "ansStr": "d) Only in abstract classes", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "easy",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "hard",
+    "question": "Identify the problem of the code and choose <br>the correct option to fix it.",
+    "code1": "<br><br><br>class Animal {<br>  public void makeSound() {<br>      System.out.println<br>        ('Some generic animal sound');<br>  }<br>}<br><br><br>class Dog extends Animal {<br>  @Override<br>  public void makeSound() {<br>      System.out.println('Bark');<br>  }<br>}<br><br><br>class Cat extends Animal {<br>  @Override<br>  public void makeSound() {<br>      System.out.println('Meow');<br>  }<br>}",
+    "code2": "<br><br><br><br><br>public class Main {<br>  public static void main(String[] args) {<br>      Animal myDog = new Dog();<br>      Animal myCat = new Cat();<br>      myDog.makeSound();<br>      myCat.makeSound();<br>  <br>      Animal myAnimal = new Animal();<br>      myAnimal.makeSound();<br>  <br>      Animal strangeAnimal = new Animal();<br>      strangeAnimal.makeSound();<br>  }<br>}",
+    "ansChoice": [
+      { "ansStr": "a) The makeSound method should be declared as abstract <br>in the Animal class to enforce method overriding.", "isCorrect": false },
+      { "ansStr": "b) The strangeAnimal variable is redundant and should <br>be removed.", "isCorrect": false },
+      { "ansStr": "c) The Animal class should be made abstract to prevent <br>instantiation of generic animals.", "isCorrect": true },
+      { "ansStr": "d) The makeSound method should not be overridden in the <br>Dog and Cat classes to demonstrate polymorphism <br>properly.", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "In which scenario does Java NOT allow polymorphism ?",
+    "ansChoice": [
+      { "ansStr": "a) When overriding private methods", "isCorrect": true },
+      {
+        "ansStr": "b) When using the method overloading",
+        "isCorrect": false
+      },
+      { "ansStr": "c) When using interface methods", "isCorrect": false },
+      { "ansStr": "d) When using abstract methods", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "In polymorphism, a reference variable of the super-<br>class can refer to the object of which classes ?",
+    "ansChoice": [
+      { "ansStr": "a) Only the superclass", "isCorrect": false },
+      { "ansStr": "b) Only the subclass", "isCorrect": false },
+      { "ansStr": "c) Any class", "isCorrect": false },
+      {
+        "ansStr": "d) The superclass or any of its subclasses",
+        "isCorrect": true
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "hard",
+    "question": "Identify the problem of the code and choose <br>the correct option to fix it.",
+    "code1": "<br><br><br>class Vehicle {<br>  public void startEngine() {<br>      System.out.println<br>        ('Starting the vehicle engine');<br>  }<br>}<br><br>class Car extends Vehicle {<br>  @Override<br>  public void startEngine() {<br>      System.out.println<br>        ('Starting the car engine');<br>  }<br>}<br><br>class Motorcycle extends Vehicle {<br>  @Override<br>  public void startEngine() {<br>      System.out.println<br>        ('Starting the motorcycle engine');<br>  }<br>}",
+    "code2": "<br><br><br>public class Main {<br>  public static void main(String[] args) {<br>      Vehicle myCar = new Car();<br>      Vehicle myMotorcycle = new Motorcycle();<br>      myCar.startEngine();<br>      myMotorcycle.startEngine();<br>  <br>      <br>      Vehicle unknownVehicle = new Vehicle();<br>      unknownVehicle.startEngine();<br>  }<br>}",
+    "ansChoice": [
+      { "ansStr": "a) The startEngine method should not be overridden in <br>the Car and Motorcycle classes.", "isCorrect": false },
+      { "ansStr": "b) The Vehicle class should be made abstract to prevent <br>instantiation of generic vehicles.", "isCorrect": true },
+      { "ansStr": "c) The unknownVehicle variable should be removed from <br>the main method.", "isCorrect": false },
+      { "ansStr": "d) The startEngine method in the Vehicle class should <br>be declared as final to prevent overriding.", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "Which keyword is used to call the superclass method <br>in the overridden method ?",
+    "ansChoice": [
+      { "ansStr": "a) this", "isCorrect": false },
+      { "ansStr": "b) super", "isCorrect": true },
+      { "ansStr": "c) extends", "isCorrect": false },
+      { "ansStr": "d) instanceof", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "Can we overload main() method in Java ?",
+    "ansChoice": [
+      {
+        "ansStr": "a) No, the main() method cannot be overloaded.",
+        "isCorrect": false
+      },
+      {
+        "ansStr": "b) Yes, the main() method can be overloaded.",
+        "isCorrect": true
+      },
+      {
+        "ansStr": "c) Only the return type of the main() method can be <br>   changed for overloading.",
+        "isCorrect": false
+      },
+      {
+        "ansStr": "d) Overloading is not a concept applicable to Java <br>   methods.",
+        "isCorrect": false
+      }
+    ],
+    "__v": 0
+  }
+]

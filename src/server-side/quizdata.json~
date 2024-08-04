@@ -1,0 +1,222 @@
+[
+  {
+    "level": "easy",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "hard",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "hard",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "easy",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "hard",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "easy",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "easy",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "easy",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "hard",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "hard",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  },
+  {
+    "level": "medium",
+    "question": "lorem ipsum ?",
+    "ansChoice": [
+      { "ansStr": "a) Many forms", "isCorrect": true },
+      { "ansStr": "b) Single form", "isCorrect": false },
+      { "ansStr": "c) No form", "isCorrect": false },
+      { "ansStr": "d) Final form", "isCorrect": false }
+    ],
+    "__v": 0
+  }
+]

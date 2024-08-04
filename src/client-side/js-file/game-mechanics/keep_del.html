@@ -1,0 +1,79 @@
+<div class="game-container">
+    <canvas class="game-canvas" width="256" height="288"></canvas>
+    <div class="qna-panel">
+        <div class="question-panel">
+            <p>Soalan--------------------------------------------------------------------------------------------------0</p>
+        </div>
+        <div class="answer-panel">
+            <div class="option">
+                <button data-button="0" data-description="Choose an attack">
+                  Attack
+                </button>
+                <span class="right"></span>
+            </div>
+
+            <div class="option">
+                <button data-button="1" data-description="Choose an item">
+                  Items
+                </button>
+                <span class="right"></span>
+            </div>
+
+            <div class="option">
+                <button data-button="2" data-description="Change to another pizza">
+                  Swap
+                </button>
+                <span class="right"></span>
+            </div>
+
+            <div class="option">
+                <button data-button="0" data-description="Choose an attack">
+                  Charge
+                </button>
+                <span class="right"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+.qna-panel {
+  font-size: x-small;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 77px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background: #FFE8D2;
+  border-top: 1px solid #A48465;
+  color: #3A160D;
+}
+
+.question-panel {
+  font-size: 8px;
+}
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.answer-panel {
+  position: absolute;
+  background: white;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.answer-panel button {
+  font-size: 8px;
+  background: none;
+  border: none;
+}

@@ -1,0 +1,511 @@
+<!-- gameplay.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 15px 20px;
+            min-height: 99%;
+            width: 100%;
+            min-width: 550px;
+            color: #5bb588;
+            background: #211D1B;
+            font-family: cursor, monospace;
+            overflow-x: hidden;
+        }
+        ::selection {
+            color: #211830;
+            background-color: #519975;
+        }
+        ::-moz-selection {
+            color: #211830;
+            background-color: #519975;
+        }
+        textarea {
+            left: -1000px;
+            position: absolute;
+        }
+        b {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        /* Cursor Start */
+        .cursor {
+            font-size: 12px;
+            color: #73ABAD;
+            background-color: #73ABAD;
+            position: relative;
+            opacity: 1;
+            height: 1.5em;
+            width: 10px;
+            max-width: 10px;
+            transform: translateY(4px);
+            overflow: hidden;
+            text-indent: -5px;
+            display: inline-block;
+            text-decoration: blink;
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% {
+            opacity: 0;
+            }
+        }
+        #command {
+            cursor: text;
+            height: 50px;
+            color: #defeff;
+        }
+        #liner {
+            line-height: 1.3em;
+            margin-top: -2px;
+            animation: show 0.5s ease forwards;
+            animation-delay: 1.2s;
+            opacity: 0;
+        }
+        #liner::before {
+            color: #5bb588;
+            content: "visitor@kpljava.com:~$";
+        }
+        #liner.username::before {
+            content: "Type your username here:";
+        }
+        #liner.joinroomcode::before {
+            content: "Insert The Code:";
+        }
+        @keyframes show {
+            from {
+            opacity: 0;
+            }
+            to {
+            opacity: 1;
+            }
+        }
+        /* Cursor End */
+        p {
+            display: block;
+            line-height: 1.3em;
+            margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0;
+            letter-spacing: 0.05em;
+            animation: typing 0.5s steps(30, end);
+        }
+        .no-animation {
+            animation: typing 0 steps(30, end);
+        }
+        .margin {
+            margin-left: 20px;
+        }
+        @keyframes typing {
+            from {
+            width: 0;
+            }
+            to {
+            width: 100%;
+            }
+        }
+        .index {
+            color: #DCDCCC;
+        }
+        .color2 {
+            color: #B89076;
+        }
+        .command {
+            color: #00acf1;
+            text-shadow: 0 0 5px #ffffff; 
+        }
+        .error {
+            color: #ff6868;
+        }
+        .white {
+            color: #fff;
+        }
+        .inherit,
+        a {
+            color: #9C8394;
+        }
+        a {
+            text-decoration: inherit;
+        }
+        a:hover {
+            background: #73ABAD;
+            color: #211830;
+        }
+        a:focus {
+            outline: 0;
+        }
+
+        #firstPage {
+            display: block;
+        }
+
+/*------------------------------------------------------------------------------------------------*/
+
+        #fourthPage {
+            display: none;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        .game-container {
+            display: flex;
+            position: relative;
+            width: 256px;
+            height: 288px;
+            margin: 0 auto;
+            outline: 1px solid #fff;
+            transform: scale(3) translateY(35%)
+        }
+        .game-container canvas{
+            image-rendering: pixelated;
+        }
+        .additional-div {
+            position: absolute;
+            left: calc(100% + 10px);
+            width: 50px;
+            height: 100%;
+        }
+        .game-timer {
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 7px;
+            background-color: rgba(215, 0, 0, 0.5);
+            position: absolute;
+            left: calc(100% - 220px);
+            width: 170px;
+            height: 15px;
+            top: 2%;
+            color: white;
+        }
+
+        .legend {
+            border: 1px solid white;
+            display: flex;
+            font-size: 7px;
+            background-color: #1F233A;
+            position: absolute;
+            right: calc(100% - -3px);
+            width: 70px;
+            height: 151px;
+            top: 2%;
+            color: white;
+        }
+        .rbreaker-legend {
+            align-items: center;
+            display: flex;
+            font-size: 7px;
+            position: absolute;
+            right: calc(100% - 67px);
+            width: 48px;
+            height: 14px;
+            top: 2%;
+            color: white;
+        }
+        .rbuilder-legend {
+            align-items: center;
+            display: flex;
+            font-size: 7px;
+            position: absolute;
+            right: calc(100% - 67px);
+            width: 48px;
+            height: 14px;
+            top: 15%;
+            color: white;
+        }
+        .bbreaker-legend {
+            align-items: center;
+            display: flex;
+            font-size: 7px;
+            position: absolute;
+            right: calc(100% - 67px);
+            width: 48px;
+            height: 14px;
+            top: 26%;
+            color: white;
+        }
+        .bbuilder-legend {
+            align-items: center;
+            display: flex;
+            font-size: 7px;
+            position: absolute;
+            right: calc(100% - 67px);
+            width: 48px;
+            height: 14px;
+            top: 39%;
+            color: white;
+        }
+        .easy-legend {
+            align-items: center;
+            display: flex;
+            font-size: 7px;
+            position: absolute;
+            right: calc(100% - 67px);
+            width: 48px;
+            height: 14px;
+            top: 54%;
+            color: white;
+        }
+        .medium-legend {
+            align-items: center;
+            display: flex;
+            font-size: 7px;
+            position: absolute;
+            right: calc(100% - 67px);
+            width: 48px;
+            height: 14px;
+            top: 70%;
+            color: white;
+        }
+        .hard-legend {
+            align-items: center;
+            display: flex;
+            font-size: 7px;
+            position: absolute;
+            right: calc(100% - 67px);
+            width: 48px;
+            height: 14px;
+            top: 87%;
+            color: white;
+        }
+
+        .hard-code {
+            padding: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 5px;
+            background-color: rgb(0 4 25 / 95%);
+            position: absolute;
+            left: calc(100% - 255px);
+            width: 240px;
+            height: 119px;
+            top: 9%;
+            color: white;
+            border: 0.1px solid #FFFFFF;
+        }
+        .split-box {
+            white-space: pre;
+            height: 150px;
+            flex: 1;
+            margin: 0px 1px;
+        }
+        .qna-panel {
+            font-family: monospace;
+            font-size: 8px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 65px;
+            padding-top : 3px;
+            padding-left: 4px;
+            padding-right: 4px;
+            background: #1F233A;
+            border-top: 1px solid #FFFFFF;
+            color: #FFFFFF;
+        }
+        .question-timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+            font-size: 8px;
+            border: 0.1px solid #FFFFFF;
+            background-color: #1F233A;
+            position: absolute;
+            right: calc(100% + 3px);
+            width: 30px;
+            height: 15px;
+            top: 76%;
+            color: #FFFFFF;
+        }
+        .true-answer-panel {
+            font-family: monospace;
+            font-size: 8px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 30px;
+            padding-top: 3px;
+            padding-left: 4px;
+            padding-right: 4px;
+            background: #008542;
+            border-top: 1px solid #FFFFFF;
+            color: #FFFFFF;
+        }
+        .role-constrait-panel, .wrong-answer-panel {
+            font-family: monospace;
+            font-size: 8px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 30px;
+            padding-top: 3px;
+            padding-left: 4px;
+            padding-right: 4px;
+            background: #850002;
+            border-top: 1px solid #FFFFFF;
+            color: #FFFFFF;
+        }
+        .backspace {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+            font-size: 6px;
+            position: absolute;
+            left: calc(100% + -45px);
+            width: 43px;
+            height: 15px;
+            top: 59%;
+            color: #FFFFFF;
+        }
+        .question-panel {
+            font-size: 8px;
+        }
+        div {
+            display: block;
+            unicode-bidi: isolate;
+        }
+        .answer-panel {
+            position: absolute;
+            background: transparent;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .answer-panel button {
+            white-space: pre;
+            text-align: left;
+            font-family: monospace;
+            font-size: 8px;
+            background: none;
+            border: none;
+            color : #FFFFFF;
+        }
+        .answer-panel button:focus {
+            background: #7fc2ff;
+            outline: 0;
+        }
+
+
+        .progressBar {
+            transition: y 0.4s ease-in, fill 0.2s linear;
+        }
+
+/*------------------------------------------------------------------------------------------------*/
+
+        .sb-outer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 44vh; /* Full height of viewport */
+        }
+        th, td {
+            border: 2px dashed #519975;
+            border-radius: 0px; /* Add rounded corners */
+            padding: 10px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- Create Room Page -->
+    <section id="firstPage">
+        <div id="terminal">
+            <a id="before"></a>
+        </div>
+        <div id="command" onclick="$('texter').focus();">
+            <textarea
+                type="text"
+                id="texter"
+                onkeyup="typeIt(this, event)"
+                onkeydown="typeIt(this, event); 
+                            moveIt(this.value.length, event)"
+                onkeypress="typeIt(this, event);"
+                autofocus
+            ></textarea>
+            <div id="liner" class="username">
+                <span id="typer"></span><b class="cursor" id="cursor">█</b>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Canvas -->
+    <section id="fourthPage">
+        <div class="game-container">
+            <div class="legend">
+                <img src="./html-file/new_resources/legend.png" height="150">
+                <div class="rbreaker-legend">unknown</div>
+                <div class="rbuilder-legend">unknown</div>
+                <div class="bbreaker-legend">unknown</div>
+                <div class="bbuilder-legend">unknown</div>
+                <div class="easy-legend">Easy</div>
+                <div class="medium-legend">Medium</div>
+                <div class="hard-legend">Hard</div>
+            </div>
+            <div class="game-timer"></div>
+            <canvas class="game-canvas" width="256" height="288"></canvas>
+            <div class="additional-div">
+                <svg class="healthbar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 116" shape-rendering="crispEdges">
+
+                    <path stroke="#d1d1d1" stroke-width="2" d="M2 2v110"></path>
+                    <path stroke="#ffffff" stroke-width="2" d="M4 2v110M6 2v110"></path>
+        
+                    <path stroke="#d1d1d1" stroke-width="2" d="M12 2v110"></path>
+                    <path stroke="#ffffff" stroke-width="2" d="M14 2v110M16 2v110"></path>
+
+                    <svg x="3" y="2" width="4" height="110">
+                        <rect class="progressBar blueProgress" fill="cyan" height="100%" width="100%" y="100%"></rect>
+                    </svg>
+                    <svg x="13" y="2" width="4" height="110">
+                        <rect class="progressBar redProgress" fill="red" height="100%" width="100%" y="100%"></rect>
+                    </svg>
+        
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+
+    <script src="../js-file/scoreboard.js"></script>
+    <script src="../js-file/game-prephase/caret.js"></script>
+    <script src="../js-file/init.js"></script>
+    <script src="../js-file/game-prephase/main.js"></script>
+    
+    
+    <script src="../js-file/game-mechanics/debug.js"></script>
+    <script src="../js-file/game-mechanics/gameUtils.js"></script>
+    <script src="../js-file/game-mechanics/keydownEvent.js"></script>
+    <script src="../js-file/game-mechanics/directioninput.js"></script>
+    <script src="../js-file/game-mechanics/keyPressListener.js"></script>
+    <script src="../js-file/game-mechanics/roleConstraintPanel.js"></script>
+    <script src="../js-file/game-mechanics/trueAnswerPanel.js"></script>
+    <script src="../js-file/game-mechanics/wrongAnswerPanel.js"></script>
+    <script src="../js-file/game-mechanics/QnAPanel.js"></script>
+    <script src="../js-file/game-mechanics/gameworld.js"></script>
+
+    <script src="../js-file/play_session.js"></script>
+
+    <script src="../js-file/gameplay.js"></script>
+</body>
+</html>
+
