@@ -17,7 +17,7 @@ HOW TO SETUP
 5. npm install
 
 
-HOW TO RUN ---------------------------------------------------
+HOW TO RUN 
 
 1. cd .\src\server-side\
 
