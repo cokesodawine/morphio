@@ -2,11 +2,11 @@
 
 Online/Multiplayer game-based learning for Java Polymorphism education
 
-HOW TO SETUP ---------------------------------------------------
+HOW TO SETUP
 
-1. bukak folder baru -> e.g. : "examplefolder"
+1. make a new folder -> e.g. : "examplefolder"
 
-- bukak cmd - 
+ - open up cmd/ps panel & start to type in commands below - 
 
 2. cd "-root path-\...\examplefolder"
 
