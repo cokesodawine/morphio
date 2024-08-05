@@ -6,7 +6,7 @@ HOW TO SETUP
 
 1. make a new folder -> e.g. : "examplefolder"
 
- - open up cmd/ps panel & start to type in commands below - 
+ ~ open up cmd/ps panel & start to type in commands below ~ 
 
 2. cd "-root path-\...\examplefolder"
 
