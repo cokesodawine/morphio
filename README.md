@@ -7,9 +7,9 @@ An online, web-based multiplayer game built for Computer Science students to lea
 ## Game Rules
 
 - It is a 2 vs 2 (red and blue)
-- Each team consists of Sabotage and Repair
-- Sabotage needs to sabotage as many Quiz Terminal as possible to gain points for the team
-- Repair needs to repair the Quiz Terminal that has been sabotaged by opponent's team to reduce their team's points
+- Each team consists of `Sabotage` and `Repair`
+- `Sabotage` needs to sabotage as many Quiz Terminal as possible to gain points for the team
+- `Repair` needs to repair the Quiz Terminal that has been sabotaged by opponent's team to reduce their team's points
 - The goal of the game is to make sure you team's progress bar stays higher than the opponent's until the game ends.
 
 ## Technical Stuff ..you might want to skip
