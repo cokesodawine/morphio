@@ -20,7 +20,7 @@ An online, web-based multiplayer game built for Computer Science students to lea
 
 ## High Level Architecture of The Game 
 
-hh
+![alt text](https://github.com/cokesodawine/morphio/blob/3005e0f2aa1163908237c512ff301c22e244dee5/src/client-side/html-file/new_resources/high-level-archi.png)
 
 ## Getting Started
 
