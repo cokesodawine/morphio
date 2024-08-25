@@ -22,6 +22,9 @@ An online, web-based multiplayer game built for Computer Science students to lea
 
 ![alt text](https://github.com/cokesodawine/morphio/blob/3005e0f2aa1163908237c512ff301c22e244dee5/src/client-side/html-file/new_resources/high-level-archi.png)
 
+Detailed architecture docs : 
+https://github.com/cokesodawine/morphio/blob/6fba6ffe6080aff49c7c397ee83dcb8adbef26cc/src/client-side/html-file/new_resources/MorphIO_Detailed%20Architecture.pdf
+
 ## Getting Started
 
 All you need is Node.JS with its NPM
